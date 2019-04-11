@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es2015", "es2016"],
+    "module": "commonjs",
+    "outDir": "production-server/",
+    "resolveJsonModule": true
+  },
+  "include": ["server.ts", "./config/**/*.ts", "./service/**/*.ts", "./pages/**/*.tsx", "./components/**/*.tsx"]
+}
