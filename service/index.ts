@@ -48,7 +48,7 @@ class HapiService {
 
         type dbPluginType = {
           plugin: any,
-          options: Object
+          options?: Object
         };
 
         const dbPlugin: dbPluginType = {
@@ -62,8 +62,7 @@ class HapiService {
         };
 
         const socketIOPlugin: dbPluginType = {
-          plugin: HapiSocketIO,
-          options: config.get('redis')
+          plugin: HapiSocketIO
         };
 
         await this.server.register(dbPlugin);

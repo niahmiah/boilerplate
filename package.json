@@ -8,7 +8,7 @@
     "build": "rm -rf dist/ && tsc --project tsconfig.json",
     "postinstall": "rm -rf dist/ && tsc --project tsconfig.json",
     "start": "NODE_ENV=production node dist/server.js",
-    "test": "NODE_ENV=test jest --detectOpenHandles --coverage --forceExit"
+    "test": "NODE_ENV=test jest --coverage --detectOpenHandles --forceExit"
   },
   "keywords": [],
   "author": "",
@@ -40,10 +40,12 @@
     "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.4",
     "@types/socket.io": "^2.1.2",
+    "@types/socket.io-client": "^1.4.32",
     "@types/socket.io-redis": "^1.0.25",
     "@types/vision": "^5.3.6",
     "jest": "^24.7.1",
     "nodemon": "^1.18.11",
+    "socket.io-client": "^2.2.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.0.3",
     "typescript": "^3.4.3"

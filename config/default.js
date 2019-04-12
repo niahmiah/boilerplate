@@ -3,7 +3,7 @@ const pkg = require('../package.json');
 const environment = process.env.ENVIRONMENT || process.env.NODE_ENV || 'development';
 
 const externalHostname = process.env.EXTERNAL_HOSTNAME || 'localhost';
-const externalPort = parseInt(`${process.env.EXTERNAL_PORT}`) || 80;
+const externalPort = parseInt(`${process.env.EXTERNAL_PORT}`) || 3000;
 
 let swaggerHost = externalHostname;
 if (externalPort !== 80) {

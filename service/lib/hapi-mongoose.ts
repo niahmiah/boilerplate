@@ -5,6 +5,7 @@ mongoose.set('useFindAndModify', false);
 module.exports.plugin = {
     name: `${pkg.name}-storage`,
     version: '1.0.0',
+    once: true,
     register: async function (server, options) {
         server.ext({
             type: 'onPreStart',
